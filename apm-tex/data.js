@@ -13,7 +13,8 @@ window.CATALOGUE_IMAGES={
   men:{
     tshirts:localCollectionImages('mens','t-shirts'),
     shirts:localCollectionImages('mens','shirts'),
-    jeans:localCollectionImages('mens','jeans')
+    jeans:localCollectionImages('mens','jeans'),
+    ethnicTraditional:localCollectionImages('mens','ethnic-traditional')
   },
   women:{
     sarees:localCollectionImages('womens','sarees'),
@@ -29,13 +30,13 @@ window.CATALOGUE_IMAGES={
 
 var i=window.CATALOGUE_IMAGES;
 window.SHOWROOMS={
-  men:{label:"Men's Wear",tagline:'Contemporary. Classic. Timeless.',cover:i.men.tshirts[0],categories:{'T-Shirts':catalogue('Men’s T-Shirt',i.men.tshirts),'Shirts':catalogue('Men’s Shirt',i.men.shirts),'Jeans':catalogue('Men’s Denim',i.men.jeans)}},
+  men:{label:"Men's Wear",tagline:'Contemporary. Classic. Timeless.',cover:i.men.tshirts[0],categories:{'T-Shirts':catalogue('Men’s T-Shirt',i.men.tshirts),'Shirts':catalogue('Men’s Shirt',i.men.shirts),'Jeans':catalogue('Men’s Denim',i.men.jeans),'Ethnic / Traditional':catalogue('Men’s Traditional Look',i.men.ethnicTraditional)}},
   women:{label:"Women's Wear",tagline:'Colour, cloth and occasion — beautifully considered.',cover:i.women.sarees[0],categories:{'Sarees':catalogue('Saree',i.women.sarees),'Kurtis':catalogue('Kurti',i.women.kurtis),'Churidars':catalogue('Churidar Set',i.women.churidars)}},
   kids:{label:"Kids' Wear",tagline:'Made for every growing celebration.',cover:i.kids.boys[0],categories:{'Boys':catalogue('Boys Look',i.kids.boys),'Girls':catalogue('Girls Look',i.kids.girls),'Festive':catalogue('Kids Festive Look',i.kids.festive)}}
 };
 
 window.APMCollections=[
- {key:'men',no:'01',title:'Men',sub:'T-Shirts · Shirts · Jeans',description:'Contemporary classics, thoughtfully selected.',image:i.men.tshirts[0]},
+ {key:'men',no:'01',title:'Men',sub:'T-Shirts · Shirts · Jeans · Ethnic / Traditional',description:'Contemporary classics and celebration dressing, thoughtfully selected.',image:i.men.tshirts[0]},
  {key:'women',no:'02',title:'Women',sub:'Sarees · Kurtis · Churidars',description:'Sarees, silhouettes and colour stories for the everyday and unforgettable.',image:i.women.sarees[0]},
  {key:'kids',no:'03',title:'Kids',sub:'Boys · Girls · Festive',description:'Comfort, colour and a little bit of occasion for every growing memory.',image:i.kids.boys[0]}
 ];
