@@ -41,5 +41,9 @@
 
 /* The cinematic film remains pinned while scrolling, but its opening frame must
    be complete on a phone instead of inheriting the desktop 108svh height. */
-@media(max-width:760px){.hero-video-native-scroll .hero{height:100svh;min-height:100svh}.hero-copy{left:clamp(20px,8vw,32px);bottom:clamp(88px,14svh,120px);max-width:calc(100% - 40px)}.hero h1{font-size:clamp(4.15rem,18vw,5.7rem);margin:18px 0 22px}.hero-sub{font-size:10px;letter-spacing:.18em}.scroll-cue{left:clamp(20px,6vw,24px);bottom:22px;gap:10px}.scroll-cue span{height:28px}.hero-video{object-position:50% 50%;transform:none}}
+@media(max-width:760px){.hero-video-native-scroll .hero{height:100svh;min-height:100svh}.hero-copy{left:clamp(20px,8vw,32px);bottom:clamp(88px,14svh,120px);max-width:calc(100% - 40px)}.hero h1{font-size:clamp(4.15rem,18vw,5.7rem);margin:18px 0 22px}.hero-sub{font-size:10px;letter-spacing:.18em}.scroll-cue{left:clamp(20px,6vw,24px);bottom:22px;gap:10px}.scroll-cue span{height:28px}.hero-video{object-position:50% 50%}}
 @media(max-width:760px) and (orientation:landscape) and (max-height:500px){.nav{height:60px}.hero-copy{bottom:58px}.hero h1{font-size:clamp(3.4rem,11vw,4.5rem);margin:12px 0 14px}.hero .eyebrow{font-size:8px}.hero-sub{font-size:9px;letter-spacing:.15em}.scroll-cue{bottom:15px;font-size:8px;gap:8px}.scroll-cue span{height:20px}.hero-video{object-position:50% 45%}}
+
+/* Portrait phones use the supplied storefront still; the landscape video has no
+   source until the device is wide enough to use the existing film treatment. */
+.hero-mobile-image{display:none}@media(max-width:760px) and (orientation:portrait){.hero-mobile-image{display:block;position:absolute;z-index:0;inset:0;background:#176eb9 url('assets/details/apm-storefront-portrait.png') center center/cover no-repeat}.hero-image,.hero-video{display:none!important}.hero-shade{background:linear-gradient(90deg,rgba(9,7,5,.26),rgba(9,7,5,.04) 70%),linear-gradient(0deg,rgba(8,6,4,.42),transparent 48%)}}
