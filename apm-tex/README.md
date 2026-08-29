@@ -4,6 +4,13 @@ A standalone editorial fashion showroom site for APM TEX, Vadakankulam. No build
 
 Run with VS Code Live Server, `npx serve .`, or `python -m http.server 8000` from this folder.
 
+## Vercel deployment
+
+This repository keeps the static site in the `apm-tex/` folder. The root
+`vercel.json` sets that folder as Vercel's output directory, so `index.html`
+is served at `/` and all relative assets continue to resolve correctly. No
+install or build command is required for this static site.
+
 The page uses optional Google Fonts, Unsplash imagery and GSAP CDNs. It remains navigable with native scrolling, system fonts, image fallbacks and IntersectionObserver motion if any CDN is unavailable.
 
 ## Updating business data and photography
